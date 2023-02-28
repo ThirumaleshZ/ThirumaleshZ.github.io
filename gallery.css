@@ -1,0 +1,78 @@
+* {
+    font-family: "Raleway";
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 600px;
+    height: 500px;
+}
+
+/* NAVBAR */
+.navbar {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navitem a {
+    height: 50px;
+    width: 100px;
+    color: black;
+    font-weight: 400;
+    padding: 30px 50px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.navitem :hover {
+    opacity: 1;
+    font-weight: 600;
+    transition: 0.25s ease-in;
+}
+
+.gallery {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.25em;
+    letter-spacing: 20px;
+    opacity: 0.75;
+}
+
+/* GALLERY */
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.flex-item {
+    margin: 10px;
+    width: 600px;
+    height: 500px;
+    /* background-size: 100%; */
+    object-fit: fill;
+    filter: grayscale();
+    overflow: hidden;
+    /* border: 5px solid black; */
+}
+
+.flex-item:hover {
+    filter: none;
+    transition: 1s ease-in-out;
+}
+
+.flex-item:hover img {
+    filter: none;
+    transition: 1s ease-in-out;
+    transform: scale(1.1);
+}
